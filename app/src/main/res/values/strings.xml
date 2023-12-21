@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ColorMyViews</string>
+    <string name="boxOneText">Box One !!!</string>
+    <string name="boxTwoText">Box Two</string>
+</resources>
