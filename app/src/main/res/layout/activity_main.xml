@@ -2,15 +2,30 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/boxEight"
+        style="@style/whiteBox"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/boxEight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/boxSeven"
+        app:layout_constraintTop_toBottomOf="@+id/boxSix" />
+
+    <TextView
         android:id="@+id/boxOne"
         style="@style/whiteBox"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50sp"
         android:layout_marginStart="@dimen/marginWide"
         android:layout_marginTop="@dimen/marginWide"
         android:layout_marginEnd="@dimen/marginWide"
@@ -22,12 +37,84 @@
 
     <TextView
         android:id="@+id/boxTwo"
-        android:layout_width="130sp"
-        android:layout_height="130sp"
+        style="@style/whiteBox"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:text="@string/boxTwoText"
+        android:textAlignment="center"
+        android:textSize="@dimen/boxTextSize"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/boxOne" />
+
+    <TextView
+        android:id="@+id/boxThree"
+        style="@style/whiteBox"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/boxThreeText"
+        app:layout_constraintBottom_toTopOf="@+id/boxFour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/boxTwo"
+        app:layout_constraintTop_toTopOf="@+id/boxTwo" />
+
+    <TextView
+        android:id="@+id/boxFour"
+        style="@style/whiteBox"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/boxFourText"
+        app:layout_constraintBottom_toTopOf="@+id/boxFive"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/boxTwo"
+        app:layout_constraintTop_toBottomOf="@+id/boxThree" />
+
+    <TextView
+        android:id="@+id/boxFive"
+        style="@style/whiteBox"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/boxFiveText"
+        app:layout_constraintBottom_toBottomOf="@+id/boxTwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/boxTwo"
+        app:layout_constraintTop_toBottomOf="@+id/boxFour" />
+
+    <TextView
+        android:id="@+id/boxSix"
+        style="@style/whiteBox"
+        android:layout_width="0sp"
+        android:layout_height="200sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/boxSixText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boxTwo" />
+
+    <TextView
+        android:id="@+id/boxSeven"
+        style="@style/whiteBox"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/boxSevenText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/boxEight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boxSix" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
