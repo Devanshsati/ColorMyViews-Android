@@ -6,4 +6,5 @@
     <color name="btn1">#FF3D00</color>
     <color name="btn2">#FFC107</color>
     <color name="btn3">#00FF0A</color>
+    <color name="backg">@android:color/holo_green_light</color>
 </resources>

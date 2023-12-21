@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
             R.id.button1 -> binding.boxOne.setBackgroundResource(R.color.btn1)
             R.id.button2 -> binding.boxTwo.setBackgroundResource(R.color.btn2)
             R.id.button3 -> binding.boxThree.setBackgroundResource(R.color.btn3)
-            else -> view.setBackgroundColor(Color.BLUE)
+            else -> view.setBackgroundResource(R.color.backg)
         }
     }
 }
