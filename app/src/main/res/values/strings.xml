@@ -8,4 +8,7 @@
     <string name="boxSixText">Box Six</string>
     <string name="boxSevenText">Box Seven</string>
     <string name="boxEight">Box Eight</string>
+    <string name="buttonOne">Orange</string>
+    <string name="buttonTwo">Yellow</string>
+    <string name="buttonThree">Green</string>
 </resources>

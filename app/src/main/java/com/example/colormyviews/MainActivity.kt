@@ -19,7 +19,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun setListeners() {
         listOf(binding.boxOne, binding.boxTwo, binding.boxThree, binding.boxFour,
-            binding.boxFive, binding.boxSix, binding.boxSeven, binding.boxEight, binding.constraintLayout)
+            binding.boxFive, binding.boxSix, binding.boxSeven, binding.boxEight,
+            binding.button1, binding.button2, binding.button3, binding.constraintLayout)
             .forEach { view ->
                 view.setOnClickListener { makeColour(it) }
             }
@@ -35,6 +36,9 @@ class MainActivity : AppCompatActivity() {
             R.id.boxSix -> view.setBackgroundResource(android.R.color.holo_orange_light)
             R.id.boxSeven -> view.setBackgroundResource(android.R.color.holo_purple)
             R.id.boxEight -> view.setBackgroundResource(android.R.color.holo_red_light)
+            R.id.button1 -> binding.boxOne.setBackgroundResource(R.color.btn1)
+            R.id.button2 -> binding.boxTwo.setBackgroundResource(R.color.btn2)
+            R.id.button3 -> binding.boxThree.setBackgroundResource(R.color.btn3)
             else -> view.setBackgroundColor(Color.BLUE)
         }
     }
